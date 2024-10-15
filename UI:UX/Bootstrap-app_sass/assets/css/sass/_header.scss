@@ -1,0 +1,59 @@
+// Top Bar Section
+.top-bar {
+    background-color: #a1c8f3;
+    color: #224466;
+    font-size: 2rem;
+}
+
+
+// banner section
+.banner {
+    height: 800px;
+    background: url("../img/rohit-tandon-62046.jpg") no-repeat center/cover;
+    @include flex(row, 0, center, center);
+    text-align: center;
+
+    .banner-body {
+
+        h1 {
+            text-transform: uppercase;
+            &:first-child {
+                font-size: 8rem;
+                font-weight: 700;
+            }
+            &:last-child {
+                font-size: 10rem;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+
+// 576 -> 992
+@media (max-width: 992px) {
+    .top-bar {
+        font-size: 1.5rem; /* 15px */
+    }
+}
+
+
+// 0 -> 576
+@media (max-width: 576px) {
+    .top-bar {
+        font-size: 1rem; /* 10px */
+    }
+
+    .banner {
+        .banner-body {
+            h1 {
+                &:first-child {
+                    font-size: 5rem;
+                }
+                &:last-child {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}

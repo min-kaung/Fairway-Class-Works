@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Toggle */
+.toggle {
+    width: 40px;
+    height: 30px;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+
+    display: none;
+}
+
+.toggle::before,
+.toggle::after {
+    content: "";
+
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: white;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+.toggle::before {
+    top: 9px;
+}
+
+.toggle::after {
+    top: 19px;
+}
+
+.toggle:hover::before,
+.toggle:hover::after {
+    top: 14px;
+    left: 5px;
+}
+
+.toggle:hover::before {
+    transform: rotate(45deg);
+}
+
+.toggle:hover::after {
+    transform: rotate(-45deg);
+}
+
+/* Navbar */
+
+nav {
+    background-color: orange;
+    padding: 0 30px;
+    height: 8vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+/* nav > * {
+    border: 1px solid black;
+} */
+
+nav .brand {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+}
+
+@media (max-width: 900px) {
+    .toggle {
+        display: block;
+    }
+
+    nav ul {
+        /* display: none; */
+        position: absolute;
+        background-color: orange;
+        top: 8vh;
+        left: 100%;
+        width: 100%;
+        height: 92vh;
+
+        flex-direction: column;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: .5s;
+    }
+}
+
+.active {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+
+/* .container {
+    max-width: 1200px;  
+    margin: 0 auto;
+} 
+
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliders {
+    background-color: orange;
+    padding: 50px 100px;
+    margin-top: 60px;
+    border-radius: 13px;
+}
+
+@media (max-width: 600px) {
+    .slider {
+        justify-content: center ;
+    }   
+} */

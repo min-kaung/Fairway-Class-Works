@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Grid</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        [class*="col-"], .col {
+            border: 2px solid brown;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container border border-danger border-2 p-4 my-3">
+        Container
+    </div>
+
+    <div class="container-fluid border border-success border-2 p-4 my-3">
+        Container fluid
+    </div>
+
+    <!-- 0 - 576 - 768 - 992 - 1200 - 1400 -->
+    <!-- 0 - sm  - md  - lg  -  xl  -  xxl -->
+    <!-- [12]      4     2      10     6 -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-xxl-6 col-xl-10 col-lg-2 col-md-4">
+                Grid Col
+            </div>
+        </div>
+    </div>
+
+    <!-- 0 - 576 - 768 - 992 - 1200 - 1400 -->
+    <!-- 0 - sm  - md  - lg  -  xl  -  xxl -->
+    <!-- [12/12]  3/3    8/4    4/8        -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-xl-4 col-lg-8 col-md-3">Grid col-1</div>
+            <div class="col-xl-8 col-lg-4 col-md-3">Grid col-2</div>
+        </div>    
+    </div>
+
+    <!-- 0 -  576 -  768 -  992 -  1200 -  1400 -->
+    <!-- 0 -  sm  -  md  -  lg  -   xl  -   xxl -->
+    <!-- [12/12]  4/8/12  12/8/4  4/4/4    -->
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-xl-4 col-lg-12 col-md-4">Grid col-1</div>
+            <div class="col-xl-4 col-lg-8 col-md-8">Grid col-2</div>
+            <div class="col-xl-4 col-lg-4 col-md-12">Grid col-3</div>
+        </div>
+    </div>
+
+
+    <!-- 0 -  576 -  768 -  992 -  1200 -  1400 -->
+    <!-- 0 -  sm  -  md  -  lg  -   xl  -   xxl -->
+    <!-- [12/12]  6/6/6/6         3/3/3/3    -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-xl-3 col-md-6">Grid col-1</div>
+            <div class="col-xl-3 col-md-6">Grid col-2</div>
+            <div class="col-xl-3 col-md-6">Grid col-3</div>
+            <div class="col-xl-3 col-md-6">Grid col-4</div>
+        </div>
+    </div>
+
+    <!-- 0 -  576   -  768     -     992       -     1200    -  1400 -->
+    <!-- 0 -  sm    -  md      -     lg        -      xl     -   xxl -->
+    <!-- [12/12]   6/6/6/6/6/6   4/4/4/4/4/4       2/2/2/2/2/2       -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-xl-2 col-lg-4 col-md-6">Grid col-1</div>
+            <div class="col-xl-2 col-lg-4 col-md-6">Grid col-2</div>
+            <div class="col-xl-2 col-lg-4 col-md-6">Grid col-3</div>
+            <div class="col-xl-2 col-lg-4 col-md-6">Grid col-4</div>
+            <div class="col-xl-2 col-lg-4 col-md-6">Grid col-5</div>
+            <div class="col-xl-2 col-lg-4 col-md-6">Grid col-6</div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <!-- row-cols -> 1 -> 6 -->
+        <div class="row row-cols-xxl-6 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1">
+            <div class="col">Grid col-1</div>
+            <div class="col">Grid col-2</div>
+            <div class="col">Grid col-3</div>
+            <div class="col">Grid col-4</div>
+            <div class="col">Grid col-5</div>
+            <div class="col">Grid col-6</div>
+            <div class="col">Grid col-7</div>
+            <div class="col">Grid col-8</div>
+            <div class="col">Grid col-9</div>
+            <div class="col">Grid col-10</div>
+            <div class="col">Grid col-11</div>
+            <div class="col">Grid col-12</div>
+        </div>
+    </div>
+</body>
+</html>

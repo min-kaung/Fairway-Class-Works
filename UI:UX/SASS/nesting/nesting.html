@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS nesting</title>
+    <link rel="stylesheet" href="nesting.css">
+</head>
+<body>
+    <!-- BEM -> block, element, modifier -->
+
+    <section>
+        <div>
+            <button>Read more</button>
+        </div>
+
+        <button>Click me</button>
+    </section>
+
+    <div class="card">
+        <div class="card__img"></div>
+
+        <div class="card__body">
+            <span class="card__tag card__tag--active">bmw x1</span>
+            <span class="card__tag">bmw x2</span>
+
+            <h1 class="card__title">BMW X7</h1>
+            <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consectetur ex sunt voluptate tempora est eius explicabo sint, numquam ut qui voluptatibus 
+            </p>
+
+            <button class="card__btn">Buy</button>
+
+        </div>
+    </div>
+
+</body>
+</html>

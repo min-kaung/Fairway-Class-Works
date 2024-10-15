@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Collapse Component</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container my-5">
+        
+
+        <div class="border border-primary p-3 mb-3 rounded-2 collapse" id="box">
+            <h1 class="display-4 ">
+                Component <span class="text-uppercase text-primary">Collapse</span>
+            </h1>
+        </div>
+    
+        <a  href="#box"
+            class="btn btn-primary"
+            data-bs-toggle="collapse">Link</a>
+
+        <button 
+            class="btn btn-secondary"
+            data-bs-toggle="collapse"
+            data-bs-target="#box"
+            >Button</button>
+
+        
+            
+    </div>
+    
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

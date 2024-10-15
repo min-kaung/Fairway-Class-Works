@@ -1,0 +1,24 @@
+.our-service {
+    // .col {
+    //     &:nth-child(1) {
+    //         .card-img {
+    //             background: url(../../img/mobile.png);
+    //         }
+    //     }
+    // }
+    .card {
+        h3 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            color: #333;
+        }
+
+        .card-img {
+            width: 160px;
+            height: 160px;
+            background-color: $brand-color;
+            margin: 0 auto;
+            border-radius: 100%;
+        }
+    }
+}

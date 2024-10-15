@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css - Position Fixed</title>
+    <style>
+        body {
+            margin: 0;
+            height: 200vh;
+        }
+
+        .top {
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 2px solid #000;
+            cursor: pointer;
+            border-radius: 100%;
+
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+
+            transition: 0.5s;
+
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .top:hover {
+            transform: translateY(-6px) rotate(360deg);
+            background-color: teal;
+            border-color: teal;
+            color: #fff;
+        }
+
+        .active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .banner {
+            background-color: gray;
+            height: 500px;
+
+            position: relative;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .banner-body {
+            background-color: red;
+            color: #fff;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .top-bar {
+            background-color: #1a1a1a;
+            height: 100px;
+        }
+
+        .nav {
+            background-color: #c70102;
+            height: 60px;
+
+            z-index: 10;
+
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- position: sticky -->
+    <div class="top-bar"></div>
+
+    <div class="nav"></div>
+
+    <!-- position: Fixed -->
+    <span class="top">&uarr;</span>
+
+    <!-- position: relative & absolute -->
+    <section class="banner">
+        <div class="banner-body">
+            position relative & absolute
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            if (scrollY > 150 )
+                document.querySelector('.top').classList.add('active')
+            else
+                document.querySelector('.top').classList.remove('active')
+        })
+    </script>
+</body>
+</html>

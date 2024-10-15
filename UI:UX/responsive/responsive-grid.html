@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+        
+        .container > * {
+            padding: 20px;
+            border: 4px solid #000;
+        }
+
+        /* box - 1 */
+        /* 900 - ~ */
+        .box-1 div {
+            width: 50%;
+            float: left;
+        }
+
+        /* 0 - 900 */
+        @media (max-width: 900px) {
+            .box-1 div {
+                width: 100%;
+                float: none;
+            }
+        }
+
+        /* box - 2 */
+        /* 900 - ~ */
+        .box-2 div {
+            width: 33.33%;
+            float: left;
+        }
+
+        /* 0 - 900 */
+        @media (max-width: 900px) {
+            .box-2 div {
+                width: 100%;
+                float: none;
+            }
+        }
+
+        /* box - 3 */
+        /* 1200 - ~ */
+        .box-3 div {
+            width: 25%;
+            float: left;
+        }
+
+        /* 900 - 1200 */
+        @media (max-width: 900px) {
+            .box-3 div {
+                width: 50%;
+            }
+        }
+
+        /* 0 - 900 */
+        @media (max-width: 700px) {
+            .box-3 div {
+                width: 100%;
+                float: none;
+            }
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container box-1">
+            <div>Element 1</div>
+            <div>Element 2</div>
+        </div>
+
+        <div class="container box-2">
+            <div>Element 1</div>
+            <div>Element 2</div>
+            <div>Element 3</div>
+        </div>
+    
+        <div class="container box-3">
+            <div>Element 1</div>
+            <div>Element 2</div>
+            <div>Element 3</div>
+            <div>Element 4</div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+    box-sizing: border-box;
+
+    box-model: -> child 
+    width + padding + border 
+    100% + 40 + 20   -> 100%
+
+    parent -> 1200px
+        child1 -> 20%/400px
+        child2 -> 20%/800px
+
+        child1 -> 33.33%/400px
+        child2 -> 33.33%/400px
+        child3 -> 33.33%/400px

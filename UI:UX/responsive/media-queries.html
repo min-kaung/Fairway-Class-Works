@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Media Queries</title>
+    <style>
+
+        /* 1200 - infinity */
+        div {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        /* 900 - 1200 */
+        @media (max-width: 1200px) {
+            div {
+                font-size: 20px;
+            }
+        }
+
+        /* 600 - 900 */
+        @media (max-width: 900px) {
+            div {
+                font-size: 15px;
+            }
+        }
+
+        /* 0 - 600 */
+        @media (max-width: 600px) {
+            div {
+                font-size: 10px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>CSS - Media Queries</div>
+</body>
+</html>

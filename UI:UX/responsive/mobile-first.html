@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - MObile first</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 0 - 600 */
+        .title {
+            font-size: 10px;
+        }
+
+        /* 600 - 900 */
+        @media (min-width: 600px) {
+            .title {
+                font-size: 20px;
+            }
+        }
+
+        /* 900 - ~ */
+        @media (min-width: 900px) {
+            .title {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Mobile First</h1>
+</body>
+</html>

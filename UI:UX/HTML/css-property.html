@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <title>Css property</title>
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+            margin-bottom: 200vh;
+            background-color: #111;
+
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+
+        .card {
+            background-color: #333;
+
+            width: 300px;
+            border: 4px solid #fff;
+
+            /* y x, top right bottom left */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 1px 1px 10px 5px #666;
+
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            display: block;
+        }
+
+        .card h1 {
+            color: #fff;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        .card button {
+            background-color: #000;
+            color: #fff;
+            border: 0 none;
+            padding: 12px 34px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="ajoy-joseph-KnbwsTb72U8-unsplash.jpg" alt="Hyundai" title="Hyundai">
+
+        <a href="#">car</a>
+
+        <h1>Hyundai Motor Group</h1>
+
+        <button>Read More &rsaquo;</button>
+    </div>
+
+    <div class="card">
+        <img src="ajoy-joseph-KnbwsTb72U8-unsplash.jpg" alt="Hyundai" title="Hyundai">
+
+        <a href="#">car</a>
+
+        <h1>Hyundai Motor Group</h1>
+
+        <button>Read More &rsaquo;</button>
+    </div>
+</body>
+</html>

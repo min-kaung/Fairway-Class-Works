@@ -1,0 +1,12 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap'); */
+@import "partial/font-embedded.css";
+@import "partial/variable.css";
+@import "partial/global.css";
+@import "partial/common.css";
+@import "partial/logo.css";
+@import "partial/nav.css";
+@import "partial/slider.css";
+@import "partial/our-classes.css";
+@import "partial/yoga-products.css";
+@import "partial/footer.css";
+

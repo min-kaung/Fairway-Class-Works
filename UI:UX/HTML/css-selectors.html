@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+        h3, span {
+            color: darkblue;
+        }
+
+        section article span {
+            color: darkgoldenrod;
+        }
+
+        a[href="#"] {
+            color: darkcyan;
+        }
+
+        section > strong {
+            color: rgba(234, 255, 0, 0.437);
+        }
+    </style>
+</head>
+<body>
+    <h3>Group</h3>
+    <span>Group</span>
+
+    <section>
+        <article>
+            <span>Descendent</span>
+        </article>
+    </section>
+
+    <a href="#">Attribute</a>
+
+    <strong>Outside</strong>
+
+    <section>
+        <strong>Child</strong>
+
+        <div>
+            <strong>Not-Child</strong>
+        </div>
+
+        <strong>Child</strong>
+    </section>
+</body>
+</html>

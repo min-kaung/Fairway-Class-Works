@@ -1,0 +1,16 @@
+
+.product li {
+    width: 22%;
+    height: 350px;
+    margin-right: 37px;
+    text-align: center;
+    float: left;
+}
+
+.product li:last-child {
+    margin-right: 0;
+}
+
+.product li span {
+    display: block;
+}

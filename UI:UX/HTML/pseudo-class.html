@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        span {
+            display: block;
+
+            color: blue;
+            border: 2px solid blue;
+            border-radius: 6px;
+            width: 120px;
+            height: 40px;
+            line-height: 40px; /* y -> center */
+            text-align: center; /* x -> center */
+            cursor: pointer;
+
+            transition: 0.3s ease-out;
+            margin-bottom: 50px;
+        }
+
+        span:hover {
+            background-color: firebrick;
+            color: #fff;
+            border-color: firebrick;
+        }
+
+        /* first-child, last-child, 
+        nth-child( 1 / even / odd / 3n+1 ) */
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            width: 230px;
+        }
+
+        ul li {
+            background-color: firebrick;
+            color: #fff;
+            padding: 15px;
+            border-bottom: 1px solid #fff;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        ul li:last-child {
+            border-bottom: 0 none;
+        }
+
+        ul li:hover {
+            background-color: #7a1919;
+            padding-left: 30px;
+        }
+
+        p:first-letter {
+            font-size: 50px;
+            color: firebrick;
+        }
+
+        p {
+            line-height: 30px;
+            word-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <span>Let's do it!</span>
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illum est ex tempora, debitis, doloremque pariatur amet quam qui a unde? Ipsam nesciunt tempora ab earum adipisci tenetur deleniti vitae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quis repellat laudantium ratione cum. Mollitia, blanditiis deserunt rerum laudantium odio quis hic! Eligendi illum amet nesciunt voluptatem error libero totam? </p>
+</body>
+</html>
