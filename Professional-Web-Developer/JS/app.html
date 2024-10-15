@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let users = [
+          { name: "Alice", age: 22, gender: "female" },
+          { name: "Bob", age: 18, gender: "male" },
+          { name: "Tom", age: 19, gender: "male" },
+          { name: "Mary", age: 32, gender: "female" },
+        ];
+
+        console.log(users.map(u => u.name) );
+        console.log(users.filter(u => u.age >20 ));
+
+        console.log(
+          users
+          .filter(u => u.gender === "female")
+          .map(u => u.name)
+        )
+
+
+
+        let user = {
+          name: 'Alice',
+          hello: function(){
+              console.log(`Hello ${this.name}`);
+          }
+        }
+
+        user.hello()
+
+        class Animal {
+          constructor(name) {
+              this.name = name;
+          }
+
+          hello() {
+              console.log(`hello ${this.name}`);
+          }
+        }
+
+        let a = new Animal(`Bobby`);
+        a.hello();
+    </script>
+
+    
+  </body>
+</html>
